@@ -17,12 +17,12 @@ const StyledWrapper = styled.div`
   }
 `;
 
-export default function GameHeader({ score, bestScore }) {
+export default function GameHeader({ score, bestScore, level }) {
   return (
     <StyledWrapper>
       <Logo />
       <h1>Pokemon Memory Card Game</h1>
-      <ScoreBoard score={score} bestScore={bestScore} />
+      <ScoreBoard score={score} bestScore={bestScore} level={level} />
     </StyledWrapper>
   );
 }

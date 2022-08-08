@@ -9,6 +9,9 @@ const FooterWrapper = styled.div`
   justify-content: center;
   gap: 0.25rem;
   background-color: black;
+  max-height: 100px;
+  height: 50px;
+
   a,
   a:hover,
   a:visited,

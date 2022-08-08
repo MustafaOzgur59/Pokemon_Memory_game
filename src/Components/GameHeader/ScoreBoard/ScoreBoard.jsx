@@ -23,6 +23,10 @@ const BestScore = styled(Score)`
   color: rgb(255 152 152);
 `;
 
+const Level = styled(Score)`
+  color: rgb(255 173 231);
+`;
+
 const Divider = styled.div`
   height: 24px;
   width: 1px;
@@ -30,12 +34,14 @@ const Divider = styled.div`
   margin: 0 10px;
 `;
 
-export default function ScoreBoard({ score, bestScore }) {
+export default function ScoreBoard({ score, bestScore, level }) {
   return (
     <StyledBoard>
-      <Score>Score: 12 {score}</Score>
+      <Score>Score:{score}</Score>
       <Divider />
-      <BestScore>Best: 20 {bestScore}</BestScore>
+      <BestScore>Best:{bestScore}</BestScore>
+      <Divider />
+      <Level>Level:{level.currentLvl}</Level>
     </StyledBoard>
   );
 }

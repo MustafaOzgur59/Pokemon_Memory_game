@@ -88,4 +88,4 @@ const CardsCollection = {
   shuffleCards,
 };
 
-export { CardsCollection as default };
+export default CardsCollection;

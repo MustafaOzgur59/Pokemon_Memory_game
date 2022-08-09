@@ -3,10 +3,10 @@ import styled from "styled-components";
 
 const StyledBoard = styled.div`
   padding: 5px;
-  flex: 1 1 200px;
-  display: flex;
+  flex: 0 1 auto;
+  display: inline-flex;
   align-items: center;
-  max-width: 20%;
+  max-width: 30%;
   justify-content: center;
 `;
 

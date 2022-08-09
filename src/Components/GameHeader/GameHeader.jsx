@@ -9,10 +9,11 @@ const StyledWrapper = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   min-height: 60px;
+  min-width: 100vw;
   background-color: var(--primary);
   background-color: blue;
   h1 {
-    font-size: 28px;
+    font-size: 3vw;
     color: white;
   }
 `;

@@ -1,7 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import { FaGithub } from "react-icons/fa";
 import styled from "styled-components";
-import { CardsCollection } from "../Utils/RetrieveCards";
 
 const FooterWrapper = styled.div`
   display: flex;

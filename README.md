@@ -2,7 +2,7 @@
 
 Pokemon memory card game built with React. From The Odin Project Cirriculum.
 
-[Live Demo] :point_left:
+[Live Demo] (https://mustafaozgur59.github.io/Top-Pokemon_Memory_game/) :point_left:
 
 ## Getting started
 

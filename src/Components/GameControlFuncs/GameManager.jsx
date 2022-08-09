@@ -7,6 +7,7 @@ import { ScoreManager } from "./ScoreManager";
 export const GameManager = () => {
   const [loading, setLoading] = useState(true);
   const [isGameOver, setIsGameOver] = useState(false);
+  const [instructionOpen, setInstructionOpen] = useState(true);
   const [
     containsCardsWithID,
     resetClickedCards,
@@ -47,26 +48,11 @@ export const GameManager = () => {
       setIsGameOver(true);
     }
   };
-  const handleCardChoice = (id) => {
-    if (!containsCardsWithID(id)) {
-      addCardWithID(id);
-      updateScore(1);
-
-      //check player progress for next lvl
-      if (clickedAllCards(level.count)) {
-        resetClickedCards();
-        setLoading(true);
-        nextLevel();
-      } else {
-        shuffleCards();
-      }
-    } else {
-      setIsGameOver(true);
-    }
-  };
 
   return [
     loading,
+    instructionOpen,
+    setInstructionOpen,
     isGameOver,
     cards,
     score,

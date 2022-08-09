@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { useState, useEffect } from "react";
 import { Card } from "./Card";
-import Loading from "../Utils/Loading";
 import Status from "../Utils/Status";
 
 const StyledGameBody = styled.div`
